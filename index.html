@@ -42,8 +42,7 @@ nav.scrolled{top:12px;left:24px;right:24px;padding:0 28px;border-radius:14px;bac
 
 /* HERO */
 .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr}
-.hero-content{padding:80px 64px;display:flex;flex-direction:column;justify-content:center;background:var(--white);border-right:1px solid var(--border);position:relative;overflow:hidden}
-.hero-content::after{content:'';position:absolute;bottom:-20px;right:-20px;width:320px;height:320px;background:url('meditation-line.webp') center/contain no-repeat;mix-blend-mode:multiply;filter:contrast(6) grayscale(1);opacity:0.5;pointer-events:none}
+.hero-content{padding:80px 64px;display:flex;flex-direction:column;justify-content:center;background:var(--white);border-right:1px solid var(--border)}
 .hero-photo{background:url('unnamed-48.jpg') center/cover no-repeat;position:relative}
 .hero-photo-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(255,255,255,0.08) 0%,transparent 25%)}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--pink-dim);border:1px solid rgba(224,69,106,0.25);color:var(--pink);font-size:11px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;margin-bottom:32px;width:fit-content}
@@ -88,7 +87,8 @@ section{padding:80px 5%}
 .class-item:hover .class-item-arrow{opacity:1;transform:translateX(0)}
 
 /* COACHES */
-.coaches-section{background:var(--bg)}
+.coaches-section{background:var(--bg);position:relative;overflow:hidden}
+.coaches-section::after{content:'';position:absolute;bottom:-40px;left:-40px;width:420px;height:420px;background:url('meditation-line.webp') center/contain no-repeat;mix-blend-mode:multiply;filter:contrast(6) grayscale(1);opacity:0.45;pointer-events:none}
 .coaches-section .section-sub{color:#555}
 .coaches-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid #E0DED9;margin-top:48px}
 .coach-card{background:#F5F4F2;border-right:1px solid #E0DED9;overflow:hidden}
@@ -107,7 +107,8 @@ section{padding:80px 5%}
 .fade-up.visible{opacity:1;transform:translateY(0)}
 
 /* GALLERY PREVIEW */
-.gallery-section{background:var(--bg)}
+.gallery-section{background:var(--bg);position:relative;overflow:hidden}
+.gallery-section::before{content:'';position:absolute;top:-30px;right:-30px;width:380px;height:380px;background:url('meditation-line.webp') center/contain no-repeat;mix-blend-mode:multiply;filter:contrast(6) grayscale(1);opacity:0.4;pointer-events:none}
 .gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:3px;margin-top:40px}
 .gallery-item{overflow:hidden;position:relative;cursor:pointer}
 .gallery-item:first-child{grid-row:1/3}
